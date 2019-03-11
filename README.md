@@ -9,5 +9,5 @@ CNN-based CVAE (conditional variational auto-encoder) will be trained by the fol
 3. Gaussian Latent Vector: apply a MLP into the corresponding gaussian variables (latent vector).
 5. Decoding (Generation): first concatenate the gaussian vector to the above encoded vector of the input condition. Next, deconvolute the concatanated vector into a picture in the original size.
 6. Bernoulli distribution: used to define a probability of having the generated picture.
-# The Generation of a Lower-Half Face conditioned on an Upper-Half Face
+## The Generation of a Lower-Half Face conditioned on an Upper-Half Face
 Given the input upper-half face and the input latent vector, the trained CVAE generates a lower-half face the algorithm thinks "suitable" to the input upper-half in the "style" fully specified by the latent vector.
